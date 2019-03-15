@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/2/">
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（一）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（一）/" itemprop="url">英语学习---翻译常见句型、技巧（一）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-云南省的丽江古镇是中国著名的旅游目的地之一。"><a href="#1-云南省的丽江古镇是中国著名的旅游目的地之一。" class="headerlink" title="1.云南省的丽江古镇是中国著名的旅游目的地之一。"></a>1.云南省的丽江古镇是中国著名的旅游目的地之一。</h2><p>Lijiang，an ancient town in Yunnan Province, is one of the most famous tourist attractions in China.</p>
+<p>解析：</p>
+<ol>
+<li>Lijiang，an ancient town in Yunnan Province, 主语是Lijiang，云南省的古镇做同位语，使句子简洁。</li>
+<li>one of the most famous 常用表达：最什么之一</li>
+<li>常用短语：tourist attractions 或 travel destinations</li>
+</ol>
+<h2 id="2-丽江还以“爱之城”而闻名。"><a href="#2-丽江还以“爱之城”而闻名。" class="headerlink" title="2.丽江还以“爱之城”而闻名。"></a>2.丽江还以“爱之城”而闻名。</h2><p>It has also been known as the “City of Love” in his history.</p>
+<p>解析：</p>
+<ol>
+<li>常用短语：be famous/known as(以。。。闻名) as表作为</li>
+<li>be famous/known for(因。。。而闻名)for表因为</li>
+</ol>
+<h2 id="3-如今，在中外游客眼中，丽江被视为爱情和浪漫的天堂。"><a href="#3-如今，在中外游客眼中，丽江被视为爱情和浪漫的天堂。" class="headerlink" title="3.如今，在中外游客眼中，丽江被视为爱情和浪漫的天堂。"></a>3.如今，在中外游客眼中，丽江被视为爱情和浪漫的天堂。</h2><p>Nowadays, this ancient town is regarded as the paradise of love and romance in the eyes of both Chinese and foreign visitors.</p>
+<p>解析：</p>
+<ol>
+<li>常用短语：be regarded as  被视为</li>
+<li>in the eyes of  在、、眼中</li>
+<li>both Chinese and foreign visitors 中外游客</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---作文（问题解决型）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---作文（问题解决型）/" itemprop="url">英语学习---作文模板（问题解决型）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="问题解决型作文写作思路："><a href="#问题解决型作文写作思路：" class="headerlink" title="问题解决型作文写作思路："></a>问题解决型作文写作思路：</h1><p>第一段：引出问题</p>
+<p>第二段：分析问题出现的原因</p>
+<p>第三段：问题导致的后果，解决措施</p>
+<h2 id="首段"><a href="#首段" class="headerlink" title="首段"></a>首段</h2><ol>
+<li><p>Along with the advance of the society more and more problems are brought to our attention, one of which is that + 问题      （描述出现的问题）</p>
+</li>
+<li><p>Undoubtedly, we must be aware of the great harmfulness of this problem.                      （阐述问题的危害性）</p>
+<p>​                       </p>
+</li>
+</ol>
+<h2 id="中间段"><a href="#中间段" class="headerlink" title="中间段"></a>中间段</h2><ol>
+<li><p>There are numerous reasons accounting for this problem, and I would like to explore a few of the most important ones here. To begin with…..In the second place……The last but not least……</p>
+<p>分析出现问题的原因</p>
+</li>
+</ol>
+<h2 id="尾段"><a href="#尾段" class="headerlink" title="尾段"></a>尾段</h2><ol>
+<li>There is no doubt the issue has exerted harmful effects on+危害   （问题导致的后果/危害）</li>
+</ol>
+<p>通过以上的讨论，我们可以得出如下结论，<strong><strong>___</strong></strong>。</p>
+<ol start="2">
+<li><p>Therefore，some measures should be taken to this problem.    (引出策略)</p>
+</li>
+<li><p>列举策略…Only in this way can we ….                    (写策略)  </p>
+</li>
+</ol>
+<h2 id="例文"><a href="#例文" class="headerlink" title="例文"></a>例文</h2><p><strong>Along with the advance of the society more and more problems are brought to our attention, one of which is that</strong> the world we live in is becoming increasingly intolerable. The environment has suffered serious damage. <strong>Undoubtedly, we must be aware of the great harmfulness of this problem.</strong>   </p>
+<p><strong>There are numerous reasons accounting for this problem, and I would like to explore a few of the most important ones here.</strong> <strong>To begin with,</strong> with the development of industrialization, more and more resources are needed. Human beings exploit resources recklessly. <strong>In the second place</strong>, being used vehicle by people, a lot of poisonous gases are emitted, which contribute to greenhouse effect. <strong>The last but not least,</strong> the use of chemical substances in agriculture also causes environmental pollution.</p>
+<p><strong>There is no doubt the issue has exerted harmful effects on</strong> the healthy of our human beings. <strong>Therefore，some measures should be taken to this problem</strong>. In the first place,  Our natural resources will last longer if we learn to recycle them. What’s more, we can stop driving personal cars. <strong>Only in these way can we,</strong> have a better and cleaner planet in the future.     </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---作文（观点对比型）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---作文（观点对比型）/" itemprop="url">英语学习---作文模板（观点对比型）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="观点对比型作文写作思路："><a href="#观点对比型作文写作思路：" class="headerlink" title="观点对比型作文写作思路："></a>观点对比型作文写作思路：</h1><p>第一段：描述论点</p>
+<p>第二段：分别列出两种观点和理由</p>
+<p>第三段：自己的观点和理由</p>
+<h2 id="首段"><a href="#首段" class="headerlink" title="首段"></a>首段</h2><ol>
+<li><p>There is a public controversy nowadays over the issue of + 论点. People<br>from different backgrounds hold different attitudes towards the issue.</p>
+<p>最近，关于……是一个公共的争论。来自不同背景的人对这个话题有不同的看法。                 </p>
+</li>
+</ol>
+<h2 id="中间段"><a href="#中间段" class="headerlink" title="中间段"></a>中间段</h2><ol>
+<li><p>Some people hold the idea that + 观点. In their point of view, 列举一到两个他们的理由. However, some people set completely different argument concerning<br>this case. They believe that + 观点. One of the most important reasons is that+ 说一个理由。</p>
+<p>一些人持……观点，在他们的观点中，+理由；然而，另一些人考虑这个话题的时候持有完全不同的观点。他们认为……，其中一个重要的原因是……</p>
+</li>
+</ol>
+<h2 id="尾段"><a href="#尾段" class="headerlink" title="尾段"></a>尾段</h2><ol>
+<li><p>From my perspective, I am in favor of the former/latter point of view. There are numerous reasons accounting for my standpoint, and I would like to explore a few of the most important ones here. To begin with…..In the second place……The last but not least……</p>
+<p>在我的观点中，我更加支持前者/后者的观点。有很多理由支持着我的观点，我将在这里列举一些重要的。……</p>
+</li>
+</ol>
+<h2 id="例文"><a href="#例文" class="headerlink" title="例文"></a>例文</h2><p>Reading Selectively Or Extensively?</p>
+<p>有选择地读书还是博览全书？</p>
+<p><strong>There is a public controversy nowadays over the issue of</strong>  Reading Selectively Or Extensively. <strong>People from different backgrounds hold different attitudes towards the issue.</strong></p>
+<p><strong>Some people hold the idea that</strong> we are supposed to(应该) read selectively. <strong>In their point of view, </strong>reading selectively can help us concentrate our limited time and attention on those selected books. <strong>However, some people set completely different argument concerning this case. They believe that</strong> we should read extensively. <strong>One of the most important reasons is that </strong>reading extensively can help to enlarge our view and grasp the general knowledge in different fields.</p>
+<p> <strong>From my perspective</strong>, the two reading ways have their roles respectively in our reading（都有可取之处）. However, the disadvantages of each method are easy to see. If we only read the books we select or prefer, the framework of our knowledge may not be complete. Our knowledge would be rather limited. And if we read without selection, we may not have so much time and energy to be specialized in one particular field. Therefore, the combination of the two methods is more reasonable.(两种融合更合理)</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---作文（漫画作文）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---作文（漫画作文）/" itemprop="url">英语学习---作文模板（漫画作文）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="漫画作文写作思路："><a href="#漫画作文写作思路：" class="headerlink" title="漫画作文写作思路："></a>漫画作文写作思路：</h1><p>第一段描述图片内容，引出内涵/现象。</p>
+<p>第二段解析原因，论证观点等。</p>
+<p>第三段总结结论，提出建议，展望未来等。</p>
+<h2 id="首段"><a href="#首段" class="headerlink" title="首段"></a>首段</h2><ol>
+<li>It is vividly depicted in the picture that+图画中的人物、话语或事件      （描述画面）</li>
+<li>What the picture is trying to present is that + 内涵/现象                       （引出内涵）</li>
+<li>第三句有两种写法：<ul>
+<li>However, from my perspective, +自己的观点</li>
+<li>There is no doubt that this phenomenon is a dangerous signal for our society.   说明现象的影响（一般是消极的）                         </li>
+</ul>
+</li>
+</ol>
+<h2 id="中间段"><a href="#中间段" class="headerlink" title="中间段"></a>中间段</h2><ol>
+<li><p>There are numerous reasons accounting for ____, and I would like to explore a few of the most important ones here. To begin with…..In the second place……The last but not least……</p>
+<p>横线处：如果是想象就写this phenomenon， 然后在分析原因。如果是观点就写my standpoint, 然后论证自己的观点。</p>
+</li>
+</ol>
+<h2 id="尾段"><a href="#尾段" class="headerlink" title="尾段"></a>尾段</h2><ol>
+<li>From what has been discussed above, we may finally draw the conclusion that…    （重申现象的影响或者自己的观点）</li>
+</ol>
+<p>通过以上的讨论，我们可以得出如下结论，<strong><strong>___</strong></strong>。</p>
+<ol>
+<li>There is no doubt that enough concern must be paid to this problem.    (引出策略)</li>
+<li>Therefore，it is high time we… Only in this way can we ….                    (写策略)  </li>
+</ol>
+<h2 id="例文"><a href="#例文" class="headerlink" title="例文"></a>例文</h2><p><img src="https://i.loli.net/2018/11/30/5c00f13a14791.jpeg" alt="3256c58b2a5745359cfb94087a8b437c.jpeg"></p>
+<p><strong>It is vividly depicted in the picture</strong> that several staff are having a meeting while one of them complained,”We have lots of information technology. We just don’t have much useful information”. <strong>What the picture present is that</strong> even though we have many advanced devices and information technology, we can hardly obtain helpful information that we need. </p>
+<p><strong>There are numerous reasons accounting for this phenomenon, and I would like to explore a few of the most important ones here.</strong> <strong>To begin with</strong>, as we use advanced devices more and more, they have brought us a lots of information.However, we could not distinguish the useful information and the useless one. <strong>In the second place</strong>, the network management regulations are not perfect, which makes it difficult to prevent our life from being full of useless information.</p>
+<p><strong>From what has been discussed above, we may finally draw the conclusion that </strong> the useless information is full of our daily life.<strong>There is no doubt that enough concern must be paid to this problem.</strong> <strong>Therefore，it is high time we</strong> turn our focus from obtaining more information to discriminating information. <strong>Only in this way can we</strong> acquire the exact information that we need.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---作文（应用文——书信）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---作文（应用文——书信）/" itemprop="url">英语学习---作文模板（应用文——书信）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="书信作文写作思路："><a href="#书信作文写作思路：" class="headerlink" title="书信作文写作思路："></a>书信作文写作思路：</h1><p>书信主要是注意格式，没有固定的模板，要写什么都是根据题目来。所以下面给出一些常见的书信主题的类型。</p>
+<h2 id="申请信-求职"><a href="#申请信-求职" class="headerlink" title="申请信(求职)"></a>申请信(求职)</h2><p>Dear …,</p>
+<p>I am extremely pleased to see your advertisement for the position in ….And I would like to write a letter to tell you that I am suitable for the kind of the job you are advertising.</p>
+<p>我非常高兴看到您招聘…职位的广告，我写信想告诉你的是我适合你们的那份工作。</p>
+<p> I feel I am competent to meet the requirements you have listed.On the one hand, …. On the other hand, …. （这里说自己有什么能力，适合职位的需要等等，尽量多扯一点）I am enclosing my resume for your kind consideration and reference.</p>
+<p>我觉得有能力满足你所列举的要求。一方面。。。另一方面。。。我在此附上我的简历供您参考和考虑。</p>
+<p>I shall be much obliged if you will offer me a precious opportunity to an interview.I am looking forward to your replies at your earliest convenience.</p>
+<p>我会很感激如果你给我一个面试机会。我希望如果你方便请尽早回复。</p>
+<p>Best regards for your health and success.</p>
+<p>​                                                                                           Sincerely yours，</p>
+<p>​                                                                                            xxx</p>
+<h2 id="感谢信"><a href="#感谢信" class="headerlink" title="感谢信"></a>感谢信</h2><p>　　Dear_________,</p>
+<p>　　I am writing this letter to express my sincere gratitude for___________.Had it not been for your assistance in <strong><strong>___</strong></strong>,I fear that <strong><strong>___</strong></strong>may not have____________.I’d like you to know that your help <strong><strong>__</strong></strong>.It not only____________,but also__________.I shall always remember__________.</p>
+<p>我写这封信想表达真诚的感激因为…. 如果没有你帮助我做… 我恐怕不能…. 我想让你知道你的帮助对我很重要，不仅。。而且… 我会一直记住你的帮助的。</p>
+<p>　　I hope that I will have the opportunity of returning your hospitality by inviting you to <strong>__</strong>.Will you kindly let me know whether you____________?I am looking forward to seeing you soon!</p>
+<p>我希望我有机会通过邀请你做…以回报你的好意 。我想知道你是否愿意接受？ 我想快点看到你。</p>
+<p>　　Again,I would like to express my thanks to .Please accept my appreciation and pass my best wishes on to <strong><strong>____</strong></strong>.I hope to hear from you soon.</p>
+<p>再一次表达我的感谢。请接收我的感激，并帮我向…传达敬意。希望快点收到你的回信、</p>
+<p>　　                                                                               Sincerely yours,</p>
+<p>　                                                                                　xxx</p>
+<h2 id="慰问信"><a href="#慰问信" class="headerlink" title="慰问信"></a>慰问信</h2><p>Dear___________,</p>
+<p>　　I read from today’s newspaper about your accident, and I am writing to extend my deepest condolences.</p>
+<p>我从今天的报纸得知你的意外（要具体说）,我写信想表达我最深的同情。</p>
+<p>　　It broke my heart to hear that.I could not believe my eyes ,and I am really worried about you and your family. I am crossing my fingers for you now in hope that________.</p>
+<p>当我得知的时候我伤碎了心。我不能相信我的眼睛,我很担心你和你的家人。我交叉手指希望你….</p>
+<p>　　I can imagine how difficult it must be for you , and I want to let you know that you have my full support.Please let me know if I can help you with anything else.</p>
+<p>我能想象你当时肯定很困难，我想让你知道我会全力保护你。请你告你我如果你需要其他什么帮助。</p>
+<p>　　I feel extremely sorry for the accident,and I am convinced that you will overcome the difficulty and embrace a better life.</p>
+<p>我对这次的意外感到很对不起，但我肯定你会客服这次困难然后拥抱一个更好的生活。</p>
+<p>　                                                                                　Sincere yours,</p>
+<p>　                                                                                                　xxx</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---作文（图表类） - 副本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---作文（图表类） - 副本/" itemprop="url">英语学习---作文模板（图表类）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="图表类作文写作思路："><a href="#图表类作文写作思路：" class="headerlink" title="图表类作文写作思路："></a>图表类作文写作思路：</h1><p>图表主要内容包括文字和图表，两者都很重要。图表的类型主要有：柱状图，饼图，折线图，统计表格等。</p>
+<p>第一段：描述总体趋势，再挑一个明显变化的具体描述，分析图表的含义</p>
+<p>第二段：分析图表出现这种趋势的原因</p>
+<p>第三段：总结，自己的观点，前景预测等。</p>
+<h2 id="首段"><a href="#首段" class="headerlink" title="首段"></a>首段</h2><ol>
+<li><p>As can be seen from the chart/ table, it displays the changes of…from …to..</p>
+<p>Especially, from xx to xx has witnessed dramatic changes in… While …  It is obvious from the table that…</p>
+<p>正如图表/表格中所见，他展示了从。。到。。时间的什么的变化。特别的是，在xx到xx时间有了引人注目的变化 ，同时….. 从图表明显可以知道+内涵            </p>
+</li>
+</ol>
+<h2 id="中间段"><a href="#中间段" class="headerlink" title="中间段"></a>中间段</h2><ol>
+<li>There are numerous reasons accounting for the changes, and I would like to explore a few of the most important ones here. To begin with…..In the second place……The last but not least……</li>
+</ol>
+<h2 id="尾段"><a href="#尾段" class="headerlink" title="尾段"></a>尾段</h2><ol>
+<li><p>From what has been discussed above, we may finally draw the conclusion that + 总结</p>
+</li>
+<li><p>Moreover, it seems that this trend will last in the foreseeable future.</p>
+<p>另外，看起来这种趋势会在可预见的未来持续。</p>
+</li>
+</ol>
+<h2 id="例文"><a href="#例文" class="headerlink" title="例文"></a>例文</h2><p> How People Spent Their Holidays</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>1990</th>
+<th>1995</th>
+<th>2000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Traveling</td>
+<td>37%</td>
+<td>51%</td>
+<td>76%</td>
+</tr>
+<tr>
+<td>Staying at home</td>
+<td>63%</td>
+<td>49%</td>
+<td>24%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>As can be seen from the table, it displays the changes of</strong> ways of people spent their holidays. <strong>Especially,</strong> from 1995 to 2000 has witnessed dramatic changes. In 1990, 63% of people spent their holidays at home, <strong>while</strong> the figure dropped considerably to 24% in 2000. <strong>It is obvious from the table that</strong> people tended to be more and more mobile, and they wanted to get entertainment in the outside world.</p>
+<p>　　<strong>There are numerous reasons accounting for the changes, and I would like to explore a few of the most important ones here. </strong> <strong>To begin with</strong>, with the rapid development of economy, people earn by far more money than they used to. Thus, people are able to afford traveling expenses. <strong>In the second place</strong>, people think it important to get well-informed about the outside world in this new era when everything is on the move. Traveling, of course, is a sure way to achieve this goal. <strong>What’s more</strong>, in this competitive society, people are usually under great stress. However, it is not difficult to find traveling an effective way to relieve people’s stress and get relaxation. <strong>Last but not least</strong>, by traveling outside, people are close to nature, which is not only beneficial to both their health and peace of mind.</p>
+<p><strong>From what has been discussed above, we may finally draw the conclusion that</strong> people prefer to go traveling rather than stay at home during holidays for a combination of reasons. <strong>Moreover, it seems that this trend will last in the foreseeable future.</strong></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---作文（名言类作文）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---作文（名言类作文）/" itemprop="url">英语学习---作文模板（名言类）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="名言类作文写作思路："><a href="#名言类作文写作思路：" class="headerlink" title="名言类作文写作思路："></a>名言类作文写作思路：</h1><p>第一段：引出谚语，谚语的内涵</p>
+<p>第二段：具体举例说明（或者说xx的重要性）</p>
+<p>第三段：总结, 说一下自己对这句名言的看法，以及呼吁人们应该学习这句名言。</p>
+<h2 id="首段"><a href="#首段" class="headerlink" title="首段"></a>首段</h2><ol>
+<li><p>It is often said that+ 名言. What the saying is trying to indicate is that+ 内涵。Indeed, we can learn many things from it.</p>
+<p>有一句名言经常被说起….. 这句名言表明的是……  实际上，我们可以从这句话学到很多东西。             </p>
+</li>
+</ol>
+<h2 id="中间段"><a href="#中间段" class="headerlink" title="中间段"></a>中间段</h2><ol>
+<li><p>两种写法：</p>
+<ul>
+<li><p>一种名言是可以扯到重要性的：就列举它的重要性 There are numerous factors, The first and most important reason is that…There is another factor that deserves some words here,…. The last but not least…..</p>
+</li>
+<li><p>平常的，不能扯到重要性的，就吹一些当今社会与名言相关话，然后说一两个实际例子。Our society abounds with the example of the proverb. + 举例说明</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="尾段"><a href="#尾段" class="headerlink" title="尾段"></a>尾段</h2><ol>
+<li>From what has been discussed above, we may finally draw the conclusion that + 名言对我们的好处。From my point of view, only through +名言具体的精神+can we achieve our potential and live a better life in this rapidly developing society.(呼吁)</li>
+</ol>
+<h2 id="例文"><a href="#例文" class="headerlink" title="例文"></a>例文</h2><p><strong>It is often said that</strong> learning is a daily experience and a lifetime mission. <strong>What the saying is trying to indicate is that</strong> lifelong learning is essential. Indeed, we can learn many things from it.</p>
+<p>Lifelong learning is crucial to our life and career in modern society. Living in the Information Age, We have to keep pace with times through ceaseless learning; Otherwise, we will be too outdated to seize any opportunities. For example, a taxi driver who learns to use a Taxi App such as Didi can make much more money than those who do not; A housewife who opens a shop online can even out-earn a white-collar worker.</p>
+<p>From what has been discussed above, we may finally draw the conclusion that the lifelong learning is important. From my point of view, only through learning ceaselessly can we achieve our potential and live a better life in this rapidly developing society.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---作文（利弊对比）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---作文（利弊对比）/" itemprop="url">英语学习---作文模板（应用文——书信）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="书信作文写作思路："><a href="#书信作文写作思路：" class="headerlink" title="书信作文写作思路："></a>书信作文写作思路：</h1><p>书信主要是注意格式，没有固定的模板，要写什么都是根据题目来。所以下面给出一些常见的书信主题的类型。</p>
+<h2 id="申请信-求职"><a href="#申请信-求职" class="headerlink" title="申请信(求职)"></a>申请信(求职)</h2><p>Dear …,</p>
+<p>I am extremely pleased to see your advertisement for the position in ….And I would like to write a letter to tell you that I am suitable for the kind of the job you are advertising.</p>
+<p>我非常高兴看到您招聘…职位的广告，我写信想告诉你的是我适合你们的那份工作。</p>
+<p> I feel I am competent to meet the requirements you have listed.On the one hand, …. On the other hand, …. （这里说自己有什么能力，适合职位的需要等等，尽量多扯一点）I am enclosing my resume for your kind consideration and reference.</p>
+<p>我觉得有能力满足你所列举的要求。一方面。。。另一方面。。。我在此附上我的简历供您参考和考虑。</p>
+<p>I shall be much obliged if you will offer me a precious opportunity to an interview.I am looking forward to your replies at your earliest convenience.</p>
+<p>我会很感激如果你给我一个面试机会。我希望如果你方便请尽早回复。</p>
+<p>Best regards for your health and success.</p>
+<p>​                                                                                           Sincerely yours，</p>
+<p>​                                                                                            xxx</p>
+<h2 id="感谢信"><a href="#感谢信" class="headerlink" title="感谢信"></a>感谢信</h2><p>　　Dear_________,</p>
+<p>　　I am writing this letter to express my sincere gratitude for___________.Had it not been for your assistance in <strong><strong>___</strong></strong>,I fear that <strong><strong>___</strong></strong>may not have____________.I’d like you to know that your help <strong><strong>__</strong></strong>.It not only____________,but also__________.I shall always remember__________.</p>
+<p>我写这封信想表达真诚的感激因为…. 如果没有你帮助我做… 我恐怕不能…. 我想让你知道你的帮助对我很重要，不仅。。而且… 我会一直记住你的帮助的。</p>
+<p>　　I hope that I will have the opportunity of returning your hospitality by inviting you to <strong>__</strong>.Will you kindly let me know whether you____________?I am looking forward to seeing you soon!</p>
+<p>我希望我有机会通过邀请你做…以回报你的好意 。我想知道你是否愿意接受？ 我想快点看到你。</p>
+<p>　　Again,I would like to express my thanks to .Please accept my appreciation and pass my best wishes on to <strong><strong>____</strong></strong>.I hope to hear from you soon.</p>
+<p>再一次表达我的感谢。请接收我的感激，并帮我向…传达敬意。希望快点收到你的回信、</p>
+<p>　　                                                                               Sincerely yours,</p>
+<p>　                                                                                　xxx</p>
+<h2 id="慰问信"><a href="#慰问信" class="headerlink" title="慰问信"></a>慰问信</h2><p>Dear___________,</p>
+<p>　　I read from today’s newspaper about your accident, and I am writing to extend my deepest condolences.</p>
+<p>我从今天的报纸得知你的意外（要具体说）,我写信想表达我最深的同情。</p>
+<p>　　It broke my heart to hear that.I could not believe my eyes ,and I am really worried about you and your family. I am crossing my fingers for you now in hope that________.</p>
+<p>当我得知的时候我伤碎了心。我不能相信我的眼睛,我很担心你和你的家人。我交叉手指希望你….</p>
+<p>　　I can imagine how difficult it must be for you , and I want to let you know that you have my full support.Please let me know if I can help you with anything else.</p>
+<p>我能想象你当时肯定很困难，我想让你知道我会全力保护你。请你告你我如果你需要其他什么帮助。</p>
+<p>　　I feel extremely sorry for the accident,and I am convinced that you will overcome the difficulty and embrace a better life.</p>
+<p>我对这次的意外感到很对不起，但我肯定你会客服这次困难然后拥抱一个更好的生活。</p>
+<p>　                                                                                　Sincere yours,</p>
+<p>　                                                                                                　xxx</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/数据结构的java实现——顺序表/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/数据结构的java实现——顺序表/" itemprop="url">数据结构的java实现——顺序表</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/后端-数据结构-java/" itemprop="url" rel="index">
+                    <span itemprop="name">后端 数据结构 java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在数据结构中，线性表是一种简单而常用的数据结构，也是其他复杂数据逻辑结构的基础。线性表中数据元素是“一个接一个”依次排序的，排在第一的数据元素称为表头，最后的数据元素称为表尾，在某个元素的前一个称为该元素的直接前驱，后一个称为直接后继。对于非空线性表来说，表头是唯一一个没有直接前驱的数据元素，表尾是唯一一个没有直接后继的元素。同一个线性表中，数据元素需要同一个数据类型。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/15/数据结构的java实现——顺序表/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/数据结构的java实现——栈/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/数据结构的java实现——栈/" itemprop="url">数据结构的Java实现——栈</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h1><p>栈也称为堆栈。在逻辑上可以看作一种特殊的线性表，它的特殊性是数据元素的插入和删除是受限制的。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/15/数据结构的java实现——栈/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

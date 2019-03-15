@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/xxxtest/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/xxxtest/" itemprop="url">test</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:33:23+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/后端/" itemprop="url" rel="index">
+                    <span itemprop="name">后端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>hello</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（四）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（四）/" itemprop="url">英语学习---翻译常见句型、技巧（四）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-Energy-is-an-essential-material-basis-for-human-survival-and-development"><a href="#1-Energy-is-an-essential-material-basis-for-human-survival-and-development" class="headerlink" title="1.Energy is an essential material basis for human survival and development."></a>1.Energy is an essential material basis for human survival and development.</h2><p>能源是人类赖以生存和发展的重要物质基础。</p>
+<p>解析：</p>
+<ol>
+<li>essential 重要的，必要的<h2 id="2-Being-an-irreplaceable-part-of-the-world-energy-market-China-plays-an-increasingly-important-role-in-maintaining-global-energy-security"><a href="#2-Being-an-irreplaceable-part-of-the-world-energy-market-China-plays-an-increasingly-important-role-in-maintaining-global-energy-security" class="headerlink" title="2.Being an irreplaceable part of the world energy market, China plays an increasingly important role in maintaining global energy security."></a>2.Being an irreplaceable part of the world energy market, China plays an increasingly important role in maintaining global energy security.</h2></li>
+</ol>
+<p>作为世界能源市场不可替代的部分，中国在维护全球能源安全上，正发挥着越来越重要的作用。</p>
+<p>解析：</p>
+<ol>
+<li><p>开头非谓语结构</p>
+</li>
+<li><p>irreplaceable 不可替代的</p>
+</li>
+<li><p>plays an <strong>increasingly</strong> important role in doing 扮演越来越重要的作用</p>
+</li>
+<li><p>maintain 保持，维持</p>
+</li>
+</ol>
+<h2 id="3-The-sustained-growth-of-energy-supply-has-provided-an-important-support-for-the-country’s-economic-growth-and-social-progress"><a href="#3-The-sustained-growth-of-energy-supply-has-provided-an-important-support-for-the-country’s-economic-growth-and-social-progress" class="headerlink" title="3.The sustained growth of energy supply has provided an important support for the country’s economic growth and social progress."></a>3.The sustained growth of energy supply has provided an important support for the country’s economic growth and social progress.</h2><p>能源的持续增长，为中国经济增长和社会发展提供了重要的支撑。</p>
+<p>解析：</p>
+<ol>
+<li>sustained 持续的</li>
+<li>economic growth 经济增长</li>
+<li>social progress 社会进步</li>
+</ol>
+<p>## </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（十） - 副本 - 副本 - 副本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（十） - 副本 - 副本 - 副本/" itemprop="url">英语学习---翻译常见句型、技巧（十）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><h2 id="China-is-a-country-with-a-time-honored-civilization-and-also-a-land-of-ceremony-and-decorum"><a href="#China-is-a-country-with-a-time-honored-civilization-and-also-a-land-of-ceremony-and-decorum" class="headerlink" title="China is a country with a time-honored civilization and also a land of ceremony and decorum."></a>China is a country with a time-honored civilization and also a land of ceremony and decorum.</h2><p>中国是一个文化历史悠久的国度，也是一个礼仪之邦。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>time-honored 历史悠久的</li>
+<li>ceremony and decorum  礼仪</li>
+</ol>
+</li>
+<li><h2 id="Whenever-guests-visit-it-is-necessary-to-make-and-serve-tea-to-them"><a href="#Whenever-guests-visit-it-is-necessary-to-make-and-serve-tea-to-them" class="headerlink" title="Whenever guests visit, it is necessary to make and serve tea to them."></a>Whenever guests visit, it is necessary to make and serve tea to them.</h2><p>每当客人来访，都需要泡茶给客人喝。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>guest 客人</li>
+<li>it is necessary to 必须的</li>
+<li>make and serve tea 泡茶</li>
+</ol>
+</li>
+<li><h2 id="Usually-if-the-tea-is-made-in-a-teacup-boiling-water-should-be-added-into-the-cup-when-half-of-the-tea-in-it-has-been-consumed"><a href="#Usually-if-the-tea-is-made-in-a-teacup-boiling-water-should-be-added-into-the-cup-when-half-of-the-tea-in-it-has-been-consumed" class="headerlink" title="Usually, if the tea is made in a teacup, boiling water should be added into the cup when half of the tea in it has been consumed;"></a>Usually, if the tea is made in a teacup, boiling water should be added into the cup when half of the tea in it has been consumed;</h2><p>通常，若是用茶杯泡的茶，在茶喝完一半之后就应该加开水</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>boiling water should be added into （要多用被动语态）</li>
+<li>characteristic 特点</li>
+<li>consume 消耗</li>
+</ol>
+</li>
+<li><h2 id="Before-serving-tea-you-may-ask-them-for-their-preferences-as-to-what-kind-of-tea-they-fancy-and-serve-them-the-tea-in-the-most-appropriate-teacups"><a href="#Before-serving-tea-you-may-ask-them-for-their-preferences-as-to-what-kind-of-tea-they-fancy-and-serve-them-the-tea-in-the-most-appropriate-teacups" class="headerlink" title="Before serving tea, you may ask them for their preferences as to what kind of tea they fancy, and serve them the tea in the most appropriate teacups."></a><strong>Before serving tea, you may ask them for their preferences as to what kind of tea they fancy, and serve them the tea in the most appropriate teacups.</strong></h2><p>在给客人奉茶之前，你应该问问他们都喜欢喝什么类型的茶，并采用最合适的茶具奉上。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>before doing 在做什么之前</li>
+<li>after doing 在做什么之后</li>
+<li>preferences喜好</li>
+<li>appropriate 适合的</li>
+</ol>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（六）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（六）/" itemprop="url">英语学习---翻译常见句型、技巧（六）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-Shadow-play-is-a-kind-of-traditional-folk-art-in-China"><a href="#1-Shadow-play-is-a-kind-of-traditional-folk-art-in-China" class="headerlink" title="1.Shadow play is a kind of traditional folk art in China."></a>1.Shadow play is a kind of traditional folk art in China.</h2><p>皮影戏是一种中国古老的民间传统艺术。</p>
+<p>解析：</p>
+<ol>
+<li><p>a kind of 一种</p>
+</li>
+<li><p>ftaditional folk art 民间传统艺术</p>
+</li>
+</ol>
+<h2 id="2-According-to-historical-records-it-originates-from-Han-Dynasty-and-prevails-in-Tang-Dynasty-and-Song-Dynasty"><a href="#2-According-to-historical-records-it-originates-from-Han-Dynasty-and-prevails-in-Tang-Dynasty-and-Song-Dynasty" class="headerlink" title="2.According to historical records, it originates from Han Dynasty, and prevails in Tang Dynasty and Song Dynasty."></a>2.According to historical records, it originates from Han Dynasty, and prevails in Tang Dynasty and Song Dynasty.</h2><p>根据史书记载，皮影戏始于汉朝，盛于唐宋。</p>
+<p>解析：</p>
+<ol>
+<li>According to historical records 根据历史记载</li>
+<li>originate from 起源于</li>
+<li>Dynasty 朝代</li>
+</ol>
+<h2 id="3-Shadow-puppets-were-first-made-of-paper-and-later-from-the-hides-of-donkeys-or-oxen"><a href="#3-Shadow-puppets-were-first-made-of-paper-and-later-from-the-hides-of-donkeys-or-oxen" class="headerlink" title="3.Shadow puppets were first made of paper, and later from the hides of donkeys or oxen."></a>3.Shadow puppets were first made of paper, and later from the hides of donkeys or oxen.</h2><p>皮影最开始用纸做，后来用驴皮或牛皮制作。</p>
+<p>解析：</p>
+<ol>
+<li>be made of 制作成<ul>
+<li>be made of 能看出原材料</li>
+<li>be made from 看不出原材料</li>
+</ul>
+</li>
+<li>oxen 牛</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（八） - 副本 - 副本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（八） - 副本 - 副本/" itemprop="url">英语学习---翻译常见句型、技巧（八）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><h2 id="E-learning-also-known-as-distance-learning-is-an-educational-mode-of-information-transmission-and-fast-learning-by-the-application-of-information-technology-and-Internet-technology"><a href="#E-learning-also-known-as-distance-learning-is-an-educational-mode-of-information-transmission-and-fast-learning-by-the-application-of-information-technology-and-Internet-technology" class="headerlink" title="E-learning, also known as distance learning, is an educational mode of information transmission and fast learning by the application of  information technology and Internet technology."></a>E-learning, also known as distance learning, is an educational mode of information transmission and fast learning by the application of  information technology and Internet technology.</h2><p>在线教育，也被称为远程教育，是指通过应用信息技术和互联网技术进行内容传播和快速学习的教育模式。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>also known as  也被称为</li>
+<li>distance learning 远程教育</li>
+<li>”是指通过应用信息技术和互联网技术进行内容传播和快速学习的教育模式“ 中“通过应用信息技术和互联网技术进行内容传播和快速学习的”是教育模式的定语， 定语过长应该后置。</li>
+<li>information transmission 内容传播</li>
+<li>technology  技术</li>
+</ol>
+</li>
+<li><h2 id="Compared-to-the-traditional-education-it-can-break-the-limits-of-time-and-space-and-make-the-places-of-learning-and-channels-of-acquiring-knowledge-flexible"><a href="#Compared-to-the-traditional-education-it-can-break-the-limits-of-time-and-space-and-make-the-places-of-learning-and-channels-of-acquiring-knowledge-flexible" class="headerlink" title="Compared to the traditional education, it can break the limits of time and space, and make the places of learning and channels of acquiring knowledge flexible."></a>Compared to the traditional education, it can break the limits of time and space, and make the places of learning and channels of acquiring knowledge flexible.</h2><p>与传统教育相比，它可以打破时空的限制，使学习的场所和获取知识的渠道灵活多变</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>compared to  与 。。对比</li>
+<li>time and space 时空（时间和空间）</li>
+<li>the limit of  。。。的限制</li>
+<li>channel 渠道、频道</li>
+<li>acquire knowledge 获取知识</li>
+<li>flexible 灵活的</li>
+</ol>
+</li>
+<li><h2 id="Based-on-its-characteristics-and-advantages-e-learning-gradually-enters-people’s-life-and-becomes-a-main-trend-of-learning"><a href="#Based-on-its-characteristics-and-advantages-e-learning-gradually-enters-people’s-life-and-becomes-a-main-trend-of-learning" class="headerlink" title="Based on its characteristics and advantages, e-learning gradually enters people’s life and becomes a main trend of learning."></a>Based on its characteristics and advantages, e-learning gradually enters people’s life and becomes a main trend of learning.</h2><p>基于它的特点和优势，在线教育逐渐走进大众的生活，成为了一种学习的主流趋势。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>based on  基于</li>
+<li>characteristic 特点</li>
+<li>main trend 主流</li>
+</ol>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（五）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（五）/" itemprop="url">英语学习---翻译常见句型、技巧（五）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-Qixi，known-as-Chinese-Valentine’s-Day-falls-on-the-seventh-day-of-the-seventh-lunar-month"><a href="#1-Qixi，known-as-Chinese-Valentine’s-Day-falls-on-the-seventh-day-of-the-seventh-lunar-month" class="headerlink" title="1.Qixi，known as Chinese Valentine’s Day, falls on the seventh day of the seventh lunar month."></a>1.Qixi，known as Chinese Valentine’s Day, falls on the seventh day of the seventh lunar month.</h2><p>每年农历七月初七，即七夕，是中国的情人节。</p>
+<p>解析：</p>
+<ol>
+<li>be known as 被公认为… , 这里没有be ，因为后面的falls 作谓语，前面的是做同位语。记住一个句子只有一个谓语</li>
+<li>falls on 表示在哪一个日期</li>
+<li>lunar 农历<h2 id="2-It-is-believed-that-you-can-see-Niulang-and-Zhinv-dating-across-the-Milky-Way-if-you-look-up-at-the-sky-on-the-evening-of-Qixi"><a href="#2-It-is-believed-that-you-can-see-Niulang-and-Zhinv-dating-across-the-Milky-Way-if-you-look-up-at-the-sky-on-the-evening-of-Qixi" class="headerlink" title="2.It is believed that you can see Niulang and Zhinv dating across the Milky Way if you look up at the sky on the evening of Qixi."></a>2.It is believed that you can see Niulang and Zhinv dating across the Milky Way if you look up at the sky on the evening of Qixi.</h2></li>
+</ol>
+<p>传说如果你在七夕那晚抬头看天空就能看到牛郎和织女在银河约会。</p>
+<p>解析：</p>
+<ol>
+<li>It is believed that 传说</li>
+<li><strong>see</strong> sb <strong>doing</strong> 看见….正在…   </li>
+<li>on the evening of Qixi   在具体一天晚上 用on，例如 on Saturday night<ul>
+<li>泛指用in、at ： in the evening   at night</li>
+</ul>
+</li>
+</ol>
+<h2 id="3-Qixi-not-only-embodies-people’s-yearning-and-pursuit-for-ideal-love-but-also-inherits-and-promotes-the-fine-traditional-virtues-of-the-Chinese-nation"><a href="#3-Qixi-not-only-embodies-people’s-yearning-and-pursuit-for-ideal-love-but-also-inherits-and-promotes-the-fine-traditional-virtues-of-the-Chinese-nation" class="headerlink" title="3.Qixi not only embodies people’s yearning and pursuit for ideal love, but also inherits and promotes the fine traditional virtues of the Chinese nation."></a>3.Qixi not only embodies people’s yearning and pursuit for ideal love, but also inherits and promotes the fine traditional virtues of the Chinese nation.</h2><p>七夕不仅体现了人们对理想爱情的向往和追求，并且传承和发扬了中华民族优良的传统美德。</p>
+<p>解析：</p>
+<ol>
+<li>not only… but also 不仅而且</li>
+<li>embody 代表</li>
+<li>yearning 向往 </li>
+<li>pursuit 追求</li>
+<li>inherit 传承</li>
+<li>promote 发扬</li>
+<li>fine traditional virtues 传统美德</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（二）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（二）/" itemprop="url">英语学习---翻译常见句型、技巧（二）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-Currently-being-one-of-the-largest-exporters-in-the-world-China-is-attracting-massive-foreign-investment。"><a href="#1-Currently-being-one-of-the-largest-exporters-in-the-world-China-is-attracting-massive-foreign-investment。" class="headerlink" title="1.Currently, being one of the largest exporters in the world, China is attracting massive foreign investment。"></a>1.Currently, being one of the largest exporters in the world, China is attracting massive foreign investment。</h2><p>目前，中国是最大的出口国之一，并正在吸引大量的外国投资。</p>
+<p>解析：</p>
+<ol>
+<li>being one of the largest exporters in the world 。<ul>
+<li>采用非谓语结构，避免单调和重复；</li>
+<li>one of the…名词是复数</li>
+</ul>
+</li>
+<li>export 出口    exporter 出口国  import 进口</li>
+<li>massive 大量的</li>
+<li>attract 吸引</li>
+<li>investment 投资n.    invest 投资v.</li>
+</ol>
+<h2 id="2-In-2011-China-surpassed-Japan-becoming-the-second-largest-economic-entity-in-the-world。"><a href="#2-In-2011-China-surpassed-Japan-becoming-the-second-largest-economic-entity-in-the-world。" class="headerlink" title="2.In 2011, China surpassed Japan, becoming the second largest economic entity in the world。"></a>2.In 2011, China surpassed Japan, becoming the second largest economic entity in the world。</h2><p>中国在2011年超过日本成为世界上第二大经济体。</p>
+<p>解析：</p>
+<ol>
+<li>surpass 超过，此处是过去式加ed</li>
+<li>second largest 第二大的      third longest 第三长的    ，序数词+形容词最高级</li>
+</ol>
+<h2 id="3-Many-elements-that-form-the-foundation-of-the-modern-world-originate-from-China"><a href="#3-Many-elements-that-form-the-foundation-of-the-modern-world-originate-from-China" class="headerlink" title="3.Many elements that form the foundation of the modern world originate from China."></a>3.Many elements that form the foundation of the modern world originate from China.</h2><p>构成现代世界基础的许多元素都起源于中国。</p>
+<p>解析：</p>
+<ol>
+<li>句子主干是：元素起源于中国。所以，“构成现代世界基础的” 用定语从句修饰先行词”元素“element.</li>
+<li>form the foundation of …  构成…的基础 </li>
+<li>originate from  起源于 v</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（九） -/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（九） -/" itemprop="url">英语学习---翻译常见句型、技巧（八）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><h2 id="In-China-calligraphy-occupies-a-very-important-position-in-the-field-of-traditional-art"><a href="#In-China-calligraphy-occupies-a-very-important-position-in-the-field-of-traditional-art" class="headerlink" title="In China, calligraphy occupies a very important position in the field of traditional art."></a>In China, calligraphy occupies a very important position in the field of traditional art.</h2><p>书法(calligraphy)在中国的传统艺术领域占有非常重要的位置。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>calligraphy 书法</li>
+<li>occupy a very important position 占有重要位置，还可以翻译为has a unique place</li>
+<li>field 领域</li>
+</ol>
+</li>
+<li><h2 id="Calligraphy-is-considered-to-be-an-art-form-requiring-inner-peace"><a href="#Calligraphy-is-considered-to-be-an-art-form-requiring-inner-peace" class="headerlink" title=".Calligraphy is considered to be an art form requiring inner peace"></a>.Calligraphy is considered to be an art form requiring inner peace</h2><p>书法被认为是一种需要内心平静的艺术形式</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>be considered to be… 被认为是…</li>
+<li>inner peace内心平静</li>
+</ol>
+</li>
+<li><h2 id="Today-although-various-modern-ways-of-writing-have-come-up-calligraphy-is-still-practiced-often-as-a-hobby"><a href="#Today-although-various-modern-ways-of-writing-have-come-up-calligraphy-is-still-practiced-often-as-a-hobby" class="headerlink" title="Today,although various modern ways of writing have come up,calligraphy is still practiced often as a hobby."></a>Today,although various modern ways of writing have come up,calligraphy is still practiced often as a hobby.</h2><p>今天，尽管出现了各种各样的现代书写方式，但人们仍然经常将书法作为一种业余爱好进行练习。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>come up出现</li>
+<li>practice 练习</li>
+<li>as a hobby 作为爱好</li>
+</ol>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（三）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（三）/" itemprop="url">英语学习---翻译常见句型、技巧（三）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-Wuzhen-an-ancient-waterside-in-Zhejiang-province-located-on-the-bank-of-the-Beijing-Hangzhou-Grand-Canal"><a href="#1-Wuzhen-an-ancient-waterside-in-Zhejiang-province-located-on-the-bank-of-the-Beijing-Hangzhou-Grand-Canal" class="headerlink" title="1.Wuzhen, an ancient waterside in Zhejiang province, located on the bank of the Beijing-Hangzhou Grand Canal."></a>1.Wuzhen, an ancient waterside in Zhejiang province, located on the bank of the Beijing-Hangzhou Grand Canal.</h2><p>乌镇是浙江的一个古老水镇，坐落在京杭大运河畔。</p>
+<p>解析：</p>
+<ol>
+<li>Wuzhen, an ancient waterside in Zhejiang province.  用了同位语</li>
+<li>located on 坐落在 <ul>
+<li>be located in/on/by/at/to = 座落于</li>
+<li>in =在里面</li>
+<li>on=在上面</li>
+<li>at=在某处（小范围）</li>
+<li>by=在旁边</li>
+<li>to大范围</li>
+</ul>
+</li>
+<li>bank 河岸 </li>
+</ol>
+<h2 id="2-It-is-an-attractive-place-with-a-lots-of-ancient-bridges-and-traditional-constructions"><a href="#2-It-is-an-attractive-place-with-a-lots-of-ancient-bridges-and-traditional-constructions" class="headerlink" title="2.It is an attractive place with a lots of ancient bridges and traditional constructions."></a>2.It is an attractive place with a lots of ancient bridges and traditional constructions.</h2><p>这是一个迷人的地方，有很多古桥和传统建筑。</p>
+<p>解析：</p>
+<ol>
+<li>attractive 吸引人的</li>
+<li>with 表示一个物体有什么东西，  用with 连接两个简单句</li>
+<li>traditional 传统的</li>
+<li>constructions 建筑</li>
+</ol>
+<h2 id="3-Kung-Fu-is-commonly-known-as-Chinese-martial-arts"><a href="#3-Kung-Fu-is-commonly-known-as-Chinese-martial-arts" class="headerlink" title="3.Kung Fu is commonly known as Chinese martial arts."></a>3.Kung Fu is commonly known as Chinese martial arts.</h2><p>功夫是中国武术的俗称。</p>
+<p>解析：</p>
+<ol>
+<li>俗称 没有对应的英语单词， 所以变通翻译：be commonly known as 大家所熟悉的</li>
+</ol>
+<h2 id="4-The-origin-of-Chinese-martial-arts-can-be-traced-back-to-the-needs-of-self-defense"><a href="#4-The-origin-of-Chinese-martial-arts-can-be-traced-back-to-the-needs-of-self-defense" class="headerlink" title="4.The origin of Chinese martial arts can be traced back to the needs of self-defense."></a>4.The origin of Chinese martial arts can be traced back to the needs of self-defense.</h2><p>中国武术的起源可以追溯到自卫的需要。</p>
+<p>解析：</p>
+<ol>
+<li>追溯 be traced back to</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/英语学习---翻译常见句型、技巧（七）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/15/英语学习---翻译常见句型、技巧（七）/" itemprop="url">英语学习---翻译常见句型、技巧（七）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T21:32:52+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语/" itemprop="url" rel="index">
+                    <span itemprop="name">英语</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><h2 id="Crosstalk-is-a-traditional-Chinese-comedic-performance-in-the-form-of-dialogue"><a href="#Crosstalk-is-a-traditional-Chinese-comedic-performance-in-the-form-of-dialogue" class="headerlink" title="Crosstalk is a traditional Chinese comedic performance in the form of dialogue."></a>Crosstalk is a traditional Chinese comedic performance in the form of dialogue.</h2><p>相声是一种以对话为形式的中国传统戏剧表演</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>performance 表演</li>
+<li>in the form of …  以。。。为形式</li>
+<li>dialogue 对话</li>
+</ol>
+</li>
+<li><h2 id="Crosstalk-is-an-art-of-language-as-well-as-an-art-of-humor"><a href="#Crosstalk-is-an-art-of-language-as-well-as-an-art-of-humor" class="headerlink" title="Crosstalk is an art of language, as well as an art of humor."></a>Crosstalk is an art of language, as well as an art of humor.</h2><p>相声是语言的艺术，也是幽默的艺术。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>两个并列的分句，两句间用as well as 连接。</li>
+<li>an art of 。。。 什么的艺术</li>
+</ol>
+</li>
+<li><h2 id="However，these-two-features-are-not-isolated-but-are-interdependent"><a href="#However，these-two-features-are-not-isolated-but-are-interdependent" class="headerlink" title="However，these two features are not isolated, but are interdependent."></a>However，these two features are not isolated, but are interdependent.</h2><p>但这两大特点不是孤立的，而是相互依存的。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>not 。。。but 不是而是</li>
+<li>isolated 孤立的</li>
+<li>interdependent 相互依存的</li>
+</ol>
+</li>
+<li><h2 id="The-crosstalk-is-made-up-of-four-fundamental-skills–speaking-imitating-teasing-and-singings-and-aims-to-entertain-the-audience-by-using-humorous-words-and-dialogues"><a href="#The-crosstalk-is-made-up-of-four-fundamental-skills–speaking-imitating-teasing-and-singings-and-aims-to-entertain-the-audience-by-using-humorous-words-and-dialogues" class="headerlink" title="The crosstalk is made up of four fundamental skills–speaking,imitating,teasing and singings, and aims to entertain the audience by using humorous words and dialogues."></a>The crosstalk is made up of four fundamental skills–speaking,imitating,teasing and singings, and aims to entertain the audience by using humorous words and dialogues.</h2><p>相声的四大基本功是说学逗唱，其目的是通过幽默的话语达到娱乐观众的效果。</p>
+<p><strong>解析：</strong></p>
+<ol>
+<li>主语是相声，分句用and 连接。</li>
+<li>四大基本功：four fundamental skills</li>
+<li>be made up of 由组成</li>
+<li>aim to 目的</li>
+<li>entertain the audience 娱乐观众</li>
+<li>中文中 达到。。。效果，  为范畴词，翻译时，可省略。</li>
+</ol>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
