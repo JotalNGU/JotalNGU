@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="JotalNGU">
 <meta property="og:description" content="1. 没扫描到Servicessm整合的时候，前台访问Controller 404. Message  1Servlet.init() for servlet [springmvc] threw exception">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-20T01:02:28.898Z">
+<meta property="og:updated_time" content="2019-03-20T01:16:40.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于使用autowired注入Service失败">
 <meta name="twitter:description" content="1. 没扫描到Servicessm整合的时候，前台访问Controller 404. Message  1Servlet.init() for servlet [springmvc] threw exception">
@@ -391,8 +391,7 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.bc717.chatroomfortucao.controller"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">context:annotation-config</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>会发现只扫描了dao包和controller包。而Service没有被扫描到，即没有注册Bean到spring容器中，所以注入失败。</p>
 <p>applicationContext.xml中的配置改成下面这样：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.bc717.chatroomfortucao"</span> <span class="attr">use-default-filters</span>=<span class="string">"false"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:exclude-filter</span> <span class="attr">type</span>=<span class="string">"annotation"</span> <span class="attr">expression</span>=<span class="string">"org.springframework.stereotype.Controller"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:exclude-filter</span> <span class="attr">type</span>=<span class="string">"annotation"</span> <span class="attr">expression</span>=<span class="string">"org.springframework.web.bind.annotation.RestController"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>注册除了被Controller注解的其他注解的类。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.bc717.chatroomfortucao"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这样就可以正常跑起来了。</p>
 
       
